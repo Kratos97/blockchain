@@ -1,0 +1,8 @@
+{"server":"47.104.196.27",
+  "private_server":"172.31.246.45",
+  "port":"9003",
+  "sub_topic":"new_block",
+  "pre_file":"block",
+  "signal_port":"9002",
+  "write_port":"9001"
+}

@@ -1,0 +1,67 @@
+<!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="box-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					  <h4 class="modal-title">物品编辑</h4>
+					</div>
+					<div class="modal-body">
+                        <div class="box-body big">
+                            <form class="form-horizontal" action="/savecommodity" method="post" role="form">
+										<input type="hidden" name="recordid" value="{{selectcommodity.id}}" />
+
+												 <div class="form-group">
+													<label class="col-sm-3 control-label">前置物品编号:</label>
+													<div class="col-sm-9">
+													  <input type="text" name="preqrcode" value="" class="form-control" placeholder="前置区块的条形码编号,支持扫描枪,0代表起始区块">
+													</div>
+												  </div>
+
+                                                <div class="form-group">
+													<label class="col-sm-3 control-label">区块名称:</label>
+													<div class="col-sm-9">
+													  <input type="text" name="eventname" value="{{selectcommodity.event_name}}" class="form-control" placeholder="Text input">
+													</div>
+												  </div>
+
+												  <div class="form-group">
+													<label class="col-sm-3 control-label">地点:</label>
+													<div class="col-sm-9">
+													  <input type="text" name="location" class="form-control" value="{{selectcommodity.location}}" placeholder="Text input">
+													</div>
+												  </div>
+
+                                                 <div class="form-group">
+													<label class="col-sm-3 control-label">人物:</label>
+													<div class="col-sm-9">
+													  <input type="text" name="person" value="{{selectcommodity.person}}" class="form-control" placeholder="Text input">
+													</div>
+												  </div>
+
+                                                 <div class="form-group">
+													<label class="col-sm-3 control-label">联系方式:</label>
+													<div class="col-sm-9">
+													  <input type="text" name="tel" value="{{selectcommodity.tel}}" class="form-control" placeholder="Text input">
+													</div>
+												  </div>
+
+												  <div class="form-group">
+													<label class="col-sm-3 control-label">描述:</label>
+													<div class="col-sm-9">
+													 <input type="text" name="desc" value="{{selectcommodity.desc}}" class="form-control" placeholder="Text input">
+													</div>
+												  </div>
+
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                  <button type="submit"  class="btn btn-primary">保存</button>
+                                </div>
+                            </form>
+                        </div>
+					</div>
+
+				  </div>
+				</div>
+			  </div>
+			<!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
